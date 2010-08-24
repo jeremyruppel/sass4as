@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<project name="Sass4AS" default="compile">
+	<property name="flex.mxmlc" value="mxmlc"/>
+	<property name="deploy.dir" value="../deploy"/>
+	<property name="src.dir" value="../test"/>
+	<target name="compile">
+		<exec executable="${flex.mxmlc}" failonerror="true">
+			<arg line="-output '${deploy.dir}/Sass4AS.swf'"/>
+			<arg line="${src.dir}/Sass4AS.as"/>
+		</exec>
+	</target>
+</project>

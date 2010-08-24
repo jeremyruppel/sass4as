@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<componentPackage>
+  <component class="com.jeremyruppel.sass4as.attribute.SassAttribute"/>
+  <component class="com.jeremyruppel.sass4as.base.ContextBase"/>
+  <component class="com.jeremyruppel.sass4as.base.OperationBase"/>
+  <component class="com.jeremyruppel.sass4as.context.NullContext"/>
+  <component class="com.jeremyruppel.sass4as.context.StyleContext"/>
+  <component class="com.jeremyruppel.sass4as.core.ISassAttribute"/>
+  <component class="com.jeremyruppel.sass4as.core.ISassContext"/>
+  <component class="com.jeremyruppel.sass4as.core.ISassOperation"/>
+  <component class="com.jeremyruppel.sass4as.core.ISassParser"/>
+  <component class="com.jeremyruppel.sass4as.core.ISassStyle"/>
+  <component class="com.jeremyruppel.sass4as.error.SassError"/>
+  <component class="com.jeremyruppel.sass4as.operation.AttributeOperation"/>
+  <component class="com.jeremyruppel.sass4as.operation.CatchAllOperation"/>
+  <component class="com.jeremyruppel.sass4as.operation.CommentOperation"/>
+  <component class="com.jeremyruppel.sass4as.operation.EmptyOperation"/>
+  <component class="com.jeremyruppel.sass4as.operation.ExtendOperation"/>
+  <component class="com.jeremyruppel.sass4as.operation.StyleOperation"/>
+  <component class="com.jeremyruppel.sass4as.operation.VariableOperation"/>
+  <component class="com.jeremyruppel.sass4as.parser.SassParser"/>
+  <component class="com.jeremyruppel.sass4as.style.SassStyle"/>
+  <component class="com.jeremyruppel.sass4as.util.camelcase"/>
+  <component class="com.jeremyruppel.sass4as.util.cssvalue"/>
+  <component class="com.jeremyruppel.sass4as.util.strip"/>
+</componentPackage>
