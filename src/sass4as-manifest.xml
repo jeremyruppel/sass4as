@@ -16,6 +16,7 @@
   <component class="com.jeremyruppel.sass4as.operation.CommentOperation"/>
   <component class="com.jeremyruppel.sass4as.operation.EmptyOperation"/>
   <component class="com.jeremyruppel.sass4as.operation.ExtendOperation"/>
+  <component class="com.jeremyruppel.sass4as.operation.GlobalOperation"/>
   <component class="com.jeremyruppel.sass4as.operation.StyleOperation"/>
   <component class="com.jeremyruppel.sass4as.operation.VariableOperation"/>
   <component class="com.jeremyruppel.sass4as.parser.SassParser"/>
