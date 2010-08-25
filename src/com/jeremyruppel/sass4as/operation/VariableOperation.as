@@ -43,6 +43,9 @@ package com.jeremyruppel.sass4as.operation
 		//  PUBLIC METHODS
 		//--------------------------------------
 
+		/**
+		 * @inheritDoc
+		 */
 		override public function execute( result : Object, parser : ISassParser ) : ISassContext
 		{
 			if( null == parser.variables[ result[ 1 ] ] )

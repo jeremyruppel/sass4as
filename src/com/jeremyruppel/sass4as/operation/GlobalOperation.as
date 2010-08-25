@@ -1,6 +1,9 @@
 //AS3///////////////////////////////////////////////////////////////////////////
 // 
-// Copyright 2010 AKQA
+// Copyright (c) 2010 the original author or authors
+//
+// Permission is hereby granted to use, modify, and distribute this file
+// in accordance with the terms of the license agreement accompanying it.
 // 
 ////////////////////////////////////////////////////////////////////////////////
 
@@ -37,6 +40,9 @@ package com.jeremyruppel.sass4as.operation
 		//  PUBLIC METHODS
 		//--------------------------------------
 		
+		/**
+		 * @inheritDoc
+		 */
 		override public function execute( result : Object, parser : ISassParser ) : ISassContext
 		{
 			return parser.globalContext;

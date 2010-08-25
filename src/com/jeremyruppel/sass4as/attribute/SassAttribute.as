@@ -29,7 +29,7 @@ package com.jeremyruppel.sass4as.attribute
 		/**
 		 * @constructor
 		 */
-		public function SassAttribute( name : String, value : * )
+		public function SassAttribute( name : String, value : String )
 		{
 			_name  = name;
 			_value = value;
@@ -47,7 +47,7 @@ package com.jeremyruppel.sass4as.attribute
 		/**
 		 * @private
 		 */
-		private var _value : *;
+		private var _value : String;
 		
 		//--------------------------------------
 		//  GETTER/SETTERS
@@ -64,7 +64,7 @@ package com.jeremyruppel.sass4as.attribute
 		/**
 		 * @inheritDoc
 		 */
-		public function get value( ) : *
+		public function get value( ) : String
 		{
 			return _value;
 		}

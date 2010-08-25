@@ -26,14 +26,23 @@ package com.jeremyruppel.sass4as.core
 		//  PUBLIC METHODS
 		//--------------------------------------
 	
+		/**
+		 * Tests whether or not the operation's pattern matches the given line
+		 */
 		function test( line : String ) : Boolean;
 		
+		/**
+		 * Executes the operation on the parser with the result of the match of the current line
+		 */
 		function execute( result : Object, parser : ISassParser ) : ISassContext;
 		
 		//--------------------------------------
 		//  GETTER/SETTERS
 		//--------------------------------------
 		
+		/**
+		 * Provides access to the operation's pattern
+		 */
 		function get pattern( ) : RegExp;
 	
 	}

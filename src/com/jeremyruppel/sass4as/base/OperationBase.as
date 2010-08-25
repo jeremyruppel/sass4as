@@ -40,12 +40,18 @@ package com.jeremyruppel.sass4as.base
 		//  PRIVATE VARIABLES
 		//--------------------------------------
 	
+		/**
+		 * @private
+		 */
 		private var _pattern : RegExp;
 		
 		//--------------------------------------
 		//  GETTER/SETTERS
 		//--------------------------------------
 	
+		/**
+		 * @inheritDoc
+		 */
 		public function get pattern( ) : RegExp
 		{
 			return _pattern;
@@ -55,11 +61,17 @@ package com.jeremyruppel.sass4as.base
 		//  PUBLIC METHODS
 		//--------------------------------------
 	
+		/**
+		 * @inheritDoc
+		 */
 		public function test( line : String ) : Boolean
 		{
 			return pattern.test( line );
 		}
 		
+		/**
+		 * @inheritDoc 
+		 */
 		public function execute( result : Object, parser : ISassParser ) : ISassContext
 		{
 			return parser.context;

@@ -48,7 +48,7 @@ package com.jeremyruppel.sass4as.base
 		//--------------------------------------
 		
 		/**
-		 * 
+		 * @inheritDoc
 		 */
 		public function get attributes( ) : Vector.<ISassAttribute>
 		{
@@ -59,10 +59,16 @@ package com.jeremyruppel.sass4as.base
 		//  PUBLIC METHODS
 		//--------------------------------------
 	
+		/**
+		 * @inheritDoc
+		 */
 		public function addAttribute( attribute : ISassAttribute ) : void
 		{
 		}
 
+		/**
+		 * @inheritDoc
+		 */
 		public function extendContext( context : ISassContext ) : void
 		{
 		}

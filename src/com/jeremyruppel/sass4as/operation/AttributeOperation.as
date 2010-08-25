@@ -14,7 +14,6 @@ package com.jeremyruppel.sass4as.operation
 	import com.jeremyruppel.sass4as.core.ISassContext;
 	import com.jeremyruppel.sass4as.core.ISassParser;
 	import com.jeremyruppel.sass4as.util.camelcase;
-	import com.jeremyruppel.sass4as.util.cssvalue;
 	import com.jeremyruppel.sass4as.util.strip;
 
 	/**
@@ -44,11 +43,14 @@ package com.jeremyruppel.sass4as.operation
 		//  PUBLIC METHODS
 		//--------------------------------------
 		
+		/**
+		 * @inheritDoc
+		 */
 		override public function execute( result : Object, parser : ISassParser ) : ISassContext
 		{
 			var name : String = camelcase( result[ 1 ] );
 			
-			var value : * = cssvalue( strip( result[ 2 ] ) );
+			var value : String = strip( result[ 2 ] );
 			
 			if( null != parser.variables[ value ] )
 			{

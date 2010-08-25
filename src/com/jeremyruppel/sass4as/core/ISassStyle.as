@@ -30,8 +30,14 @@ package com.jeremyruppel.sass4as.core
 		//  GETTER/SETTERS
 		//--------------------------------------
 	
+		/**
+		 * The name of this style
+		 */
 		function get styleName( ) : String;
 		
+		/**
+		 * The style object defining this style's attributes, ready to be passed to <code>StyleSheet.setStyle</code>
+		 */
 		function get styleObject( ) : Object;
 	}
 

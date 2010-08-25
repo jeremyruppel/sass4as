@@ -32,7 +32,7 @@ package com.jeremyruppel.sass4as.core
 		function addAttribute( attribute : ISassAttribute ) : void;
 		
 		/**
-		 * Adds all <code>ISassAttributes</code> from the specified context to this context
+		 * Adds all <code>ISassAttributes</code> from the specified <code>ISassContext</code> to this context
 		 */
 		function extendContext( context : ISassContext ) : void;
 		

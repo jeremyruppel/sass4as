@@ -41,6 +41,9 @@ package com.jeremyruppel.sass4as.operation
 		//  PUBLIC METHODS
 		//--------------------------------------
 
+		/**
+		 * @inheritDoc
+		 */
 		override public function execute( result : Object, parser : ISassParser ) : ISassContext
 		{
 			parser.raise( SassError.E_OPERATION_NOMATCH );

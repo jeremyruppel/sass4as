@@ -12,6 +12,7 @@ package com.jeremyruppel.sass4as.style
 	import com.jeremyruppel.sass4as.context.StyleContext;
 	import com.jeremyruppel.sass4as.core.ISassAttribute;
 	import com.jeremyruppel.sass4as.core.ISassStyle;
+	import com.jeremyruppel.sass4as.util.cssvalue;
 
 	/**
 	 * Class.
@@ -39,25 +40,34 @@ package com.jeremyruppel.sass4as.style
 		//--------------------------------------
 		//  PRIVATE VARIABLES
 		//--------------------------------------
-	
+		
+		/**
+		 * @private
+		 */
 		private var _styleName : String;
 		
 		//--------------------------------------
 		//  GETTER/SETTERS
 		//--------------------------------------
 
+		/**
+		 * @inheritDoc
+		 */
 		public function get styleName( ) : String
 		{
 			return _styleName;
 		}
 
+		/**
+		 * @inheritDoc
+		 */
 		public function get styleObject( ) : Object
 		{
 			var obj : Object = new Object( );
 			
 			for each( var attribute : ISassAttribute in attributes )
 			{
-				obj[ attribute.name ] = attribute.value;
+				obj[ attribute.name ] = cssvalue( attribute.value );
 			}
 
 			return obj;
@@ -67,10 +77,14 @@ package com.jeremyruppel.sass4as.style
 		//  PUBLIC METHODS
 		//--------------------------------------
 
+		/**
+		 * A string representation of this object
+		 */
 		public function toString( ) : String
 		{
 			return "[ SassStyle name=" + styleName + " ]";
 		}
+		
 		//--------------------------------------
 		//  EVENT HANDLERS
 		//--------------------------------------

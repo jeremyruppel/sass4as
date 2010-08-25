@@ -11,7 +11,8 @@ package com.jeremyruppel.sass4as.core
 {
 
 	/**
-	 * Interface describing the contract for...
+	 * An <code>ISassAttribute</code> is a name/value pair that can be
+	 * assigned to an <code>ISassContext</code>.
 	 * 
 	 * @langversion ActionScript 3.0
 	 * @playerversion Flash 10.0.0
@@ -36,9 +37,9 @@ package com.jeremyruppel.sass4as.core
 		function get name( ) : String;
 		
 		/**
-		 * The value of this attribute, starred out because it may be string or numeric.
+		 * The value of this attribute.
 		 */
-		function get value( ) : *;
+		function get value( ) : String;
 	}
 
 }

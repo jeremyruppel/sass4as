@@ -26,10 +26,19 @@ package com.jeremyruppel.sass4as.error
 		// CLASS CONSTANTS
 		//--------------------------------------
 	
+		/**
+		 * @private
+		 */
 		public static const E_VARIABLE_OVR : String = "Duplicate variable definition encountered. Cannot overwrite variable.";
 		
+		/**
+		 * @private
+		 */
 		public static const E_STYLE_OVR : String = "Duplicate style definition encountered. Cannot overwrite style";
 		
+		/**
+		 * @private
+		 */
 		public static const E_OPERATION_NOMATCH : String = "No operation found matching line.";
 		
 		//--------------------------------------
