@@ -16,6 +16,7 @@ package com.jeremyruppel.sass4as.operation
 	import org.hamcrest.collection.array;
 	import org.hamcrest.collection.hasItems;
 	import org.hamcrest.object.equalTo;
+	import org.hamcrest.object.nullValue;
 
 	/**
 	 * Class.
@@ -120,6 +121,51 @@ footer
 			var styleSheet : StyleSheet = parser.parseSass( sass.toString( ) );
 
 			assertThat( styleSheet.styleNames, hasItems( equalTo( "body" ), equalTo( "header" ), equalTo( "footer" ) ) );
+		}
+		
+		[Test(description="styles automatically inherit from the global context if it is declared")]
+		public function test_styles_automatically_inherit_from_the_global_context_if_it_is_declared( ) : void
+		{
+			var sass : XML = 
+<sass>
+<![CDATA[
+*
+  font-family: Helvetica Neue
+
+body
+  color: #ff0055
+
+]]>
+</sass>;
+
+			var styleSheet : StyleSheet = parser.parseSass( sass.toString( ) );
+			
+			assertThat( styleSheet.getStyle( 'body' ).fontFamily, equalTo( 'Helvetica Neue' ) );
+		}
+		
+		[Test(description="only styles declared after the global context inherit from it")]
+		public function test_only_styles_declared_after_the_global_context_inherit_from_it( ) : void
+		{
+			var sass : XML = 
+<sass>
+<![CDATA[
+body
+  color: #ff0055
+
+*
+  font-family: Helvetica Neue
+
+header
+  color: #333333
+
+]]>
+</sass>;
+
+			var styleSheet : StyleSheet = parser.parseSass( sass.toString( ) );
+			
+			assertThat( styleSheet.getStyle( 'header' ).fontFamily, equalTo( 'Helvetica Neue' ) );
+			
+			assertThat( styleSheet.getStyle( 'body' ).fontFamily, nullValue( ) );
 		}
 		
 		//--------------------------------------

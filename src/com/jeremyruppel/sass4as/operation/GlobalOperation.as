@@ -1,9 +1,6 @@
 //AS3///////////////////////////////////////////////////////////////////////////
 // 
-// Copyright (c) 2010 the original author or authors
-//
-// Permission is hereby granted to use, modify, and distribute this file
-// in accordance with the terms of the license agreement accompanying it.
+// Copyright 2010 AKQA
 // 
 ////////////////////////////////////////////////////////////////////////////////
 
@@ -12,19 +9,17 @@ package com.jeremyruppel.sass4as.operation
 	import com.jeremyruppel.sass4as.base.OperationBase;
 	import com.jeremyruppel.sass4as.core.ISassContext;
 	import com.jeremyruppel.sass4as.core.ISassParser;
-	import com.jeremyruppel.sass4as.core.ISassStyle;
-	import com.jeremyruppel.sass4as.style.SassStyle;
 
 	/**
 	 * Class.
 	 * 
 	 * @langversion ActionScript 3.0
-	 * @playerversion Flash 10.0.0
+	 * @playerversion Flash 9.0
 	 * 
 	 * @author Jeremy Ruppel
-	 * @since  18.08.2010
+	 * @since  24.08.2010
 	 */
-	public class StyleOperation extends OperationBase
+	public class GlobalOperation extends OperationBase
 	{
 		//--------------------------------------
 		//  CONSTRUCTOR
@@ -33,24 +28,18 @@ package com.jeremyruppel.sass4as.operation
 		/**
 		 * @constructor
 		 */
-		public function StyleOperation( )
+		public function GlobalOperation( )
 		{
-			super( /^([a-zA-Z0-9\-]+)\s*$/ );
+			super( /^\*$/ );
 		}
-		
+	
 		//--------------------------------------
 		//  PUBLIC METHODS
 		//--------------------------------------
 		
 		override public function execute( result : Object, parser : ISassParser ) : ISassContext
 		{
-			var style : ISassStyle = new SassStyle( result[ 1 ] );
-			
-			style.extendContext( parser.globalContext );
-			
-			parser.styles.push( style );
-
-			return style;
+			return parser.globalContext;
 		}
 	
 	}

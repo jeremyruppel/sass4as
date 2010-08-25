@@ -19,6 +19,8 @@ package com.jeremyruppel.sass4as
 	import com.jeremyruppel.sass4as.operation.EmptyOperationPatternFixture;
 	import com.jeremyruppel.sass4as.operation.ExtendOperationFixture;
 	import com.jeremyruppel.sass4as.operation.ExtendOperationPatternFixture;
+	import com.jeremyruppel.sass4as.operation.GlobalOperationFixture;
+	import com.jeremyruppel.sass4as.operation.GlobalOperationPatternFixture;
 	import com.jeremyruppel.sass4as.operation.StyleOperationFixture;
 	import com.jeremyruppel.sass4as.operation.StyleOperationPatternFixture;
 	import com.jeremyruppel.sass4as.operation.VariableOperationFixture;
@@ -40,7 +42,6 @@ package com.jeremyruppel.sass4as
 	 * 
 	 * TODO:
 	 * 
-	 * - * selector
 	 * - helper functions
 	 * - math operations
 	 * - mixins
@@ -71,6 +72,8 @@ package com.jeremyruppel.sass4as
 		public var emptyOperationPatternFixture     : EmptyOperationPatternFixture;
 		public var extendOperationFixture           : ExtendOperationFixture;
 		public var extendOperationPatternFixture    : ExtendOperationPatternFixture;
+		public var globalOperationFixture           : GlobalOperationFixture;
+		public var globalOperationPatternFixture    : GlobalOperationPatternFixture;
 		public var styleOperationFixture            : StyleOperationFixture;
 		public var styleOperationPatternFixture     : StyleOperationPatternFixture;
 		public var variableOperationFixture         : VariableOperationFixture;

@@ -3,12 +3,10 @@
 <plist version="1.0">
 <dict>
 	<key>currentDocument</key>
-	<string>src/com/jeremyruppel/sass4as/util/cssvalue.as</string>
+	<string>src/com/jeremyruppel/sass4as/util/camelcase.as</string>
 	<key>documents</key>
 	<array>
 		<dict>
-			<key>expanded</key>
-			<true/>
 			<key>name</key>
 			<string>build</string>
 			<key>regexFolderFilter</key>
@@ -27,8 +25,6 @@
 			<string>deploy</string>
 		</dict>
 		<dict>
-			<key>expanded</key>
-			<true/>
 			<key>name</key>
 			<string>libs</string>
 			<key>regexFolderFilter</key>
@@ -37,8 +33,6 @@
 			<string>libs</string>
 		</dict>
 		<dict>
-			<key>expanded</key>
-			<true/>
 			<key>name</key>
 			<string>script</string>
 			<key>regexFolderFilter</key>
@@ -65,12 +59,38 @@
 			<string>!.*/(\.[^/]*|CVS|_darcs|_MTN|\{arch\}|blib|.*~\.nib|.*\.(framework|app|pbproj|pbxproj|xcode(proj)?|bundle))$</string>
 			<key>sourceDirectory</key>
 			<string>test</string>
+		</dict>
+		<dict>
+			<key>filename</key>
+			<string>LICENSE</string>
+			<key>lastUsed</key>
+			<date>2010-08-24T17:05:33Z</date>
+		</dict>
+		<dict>
+			<key>filename</key>
+			<string>README.md</string>
+			<key>lastUsed</key>
+			<date>2010-08-25T00:44:19Z</date>
 		</dict>
 	</array>
 	<key>fileHierarchyDrawerWidth</key>
 	<integer>327</integer>
 	<key>metaData</key>
 	<dict>
+		<key>README.md</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>247</integer>
+				<key>line</key>
+				<integer>4</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>67</integer>
+		</dict>
 		<key>deploy/index.html</key>
 		<dict>
 			<key>caret</key>
@@ -79,20 +99,6 @@
 				<integer>26</integer>
 				<key>line</key>
 				<integer>4</integer>
-			</dict>
-			<key>firstVisibleColumn</key>
-			<integer>0</integer>
-			<key>firstVisibleLine</key>
-			<integer>0</integer>
-		</dict>
-		<key>script/build-swc.sh</key>
-		<dict>
-			<key>caret</key>
-			<dict>
-				<key>column</key>
-				<integer>0</integer>
-				<key>line</key>
-				<integer>0</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
@@ -113,100 +119,14 @@
 			<key>firstVisibleLine</key>
 			<integer>0</integer>
 		</dict>
-		<key>src/com/jeremyruppel/sass4as/base/ContextBase.as</key>
+		<key>src/com/jeremyruppel/sass4as/util/camelcase.as</key>
 		<dict>
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>49</integer>
+				<integer>80</integer>
 				<key>line</key>
-				<integer>20</integer>
-			</dict>
-			<key>firstVisibleColumn</key>
-			<integer>0</integer>
-			<key>firstVisibleLine</key>
-			<integer>0</integer>
-		</dict>
-		<key>src/com/jeremyruppel/sass4as/error/SassError.as</key>
-		<dict>
-			<key>caret</key>
-			<dict>
-				<key>column</key>
-				<integer>0</integer>
-				<key>line</key>
-				<integer>0</integer>
-			</dict>
-			<key>firstVisibleColumn</key>
-			<integer>0</integer>
-			<key>firstVisibleLine</key>
-			<integer>0</integer>
-		</dict>
-		<key>src/com/jeremyruppel/sass4as/operation/CommentOperation.as</key>
-		<dict>
-			<key>caret</key>
-			<dict>
-				<key>column</key>
-				<integer>0</integer>
-				<key>line</key>
-				<integer>39</integer>
-			</dict>
-			<key>firstVisibleColumn</key>
-			<integer>0</integer>
-			<key>firstVisibleLine</key>
-			<integer>0</integer>
-		</dict>
-		<key>src/com/jeremyruppel/sass4as/operation/EmptyOperation.as</key>
-		<dict>
-			<key>caret</key>
-			<dict>
-				<key>column</key>
-				<integer>3</integer>
-				<key>line</key>
-				<integer>42</integer>
-			</dict>
-			<key>columnSelection</key>
-			<false/>
-			<key>firstVisibleColumn</key>
-			<integer>0</integer>
-			<key>firstVisibleLine</key>
-			<integer>0</integer>
-			<key>selectFrom</key>
-			<dict>
-				<key>column</key>
-				<integer>2</integer>
-				<key>line</key>
-				<integer>35</integer>
-			</dict>
-			<key>selectTo</key>
-			<dict>
-				<key>column</key>
-				<integer>3</integer>
-				<key>line</key>
-				<integer>42</integer>
-			</dict>
-		</dict>
-		<key>src/com/jeremyruppel/sass4as/parser/SassParser.as</key>
-		<dict>
-			<key>caret</key>
-			<dict>
-				<key>column</key>
-				<integer>28</integer>
-				<key>line</key>
-				<integer>77</integer>
-			</dict>
-			<key>firstVisibleColumn</key>
-			<integer>0</integer>
-			<key>firstVisibleLine</key>
-			<integer>59</integer>
-		</dict>
-		<key>src/com/jeremyruppel/sass4as/style/SassStyle.as</key>
-		<dict>
-			<key>caret</key>
-			<dict>
-				<key>column</key>
-				<integer>0</integer>
-				<key>line</key>
-				<integer>0</integer>
+				<integer>7</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
@@ -218,153 +138,23 @@
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>20</integer>
+				<integer>80</integer>
 				<key>line</key>
-				<integer>24</integer>
+				<integer>7</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
 			<integer>0</integer>
 		</dict>
-		<key>src/sass4as-manifest.xml</key>
+		<key>src/com/jeremyruppel/sass4as/util/strip.as</key>
 		<dict>
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>0</integer>
+				<integer>80</integer>
 				<key>line</key>
-				<integer>0</integer>
-			</dict>
-			<key>firstVisibleColumn</key>
-			<integer>0</integer>
-			<key>firstVisibleLine</key>
-			<integer>0</integer>
-		</dict>
-		<key>test/Sass4AS.mxml</key>
-		<dict>
-			<key>caret</key>
-			<dict>
-				<key>column</key>
-				<integer>8</integer>
-				<key>line</key>
-				<integer>45</integer>
-			</dict>
-			<key>columnSelection</key>
-			<false/>
-			<key>firstVisibleColumn</key>
-			<integer>0</integer>
-			<key>firstVisibleLine</key>
-			<integer>0</integer>
-			<key>selectFrom</key>
-			<dict>
-				<key>column</key>
-				<integer>5</integer>
-				<key>line</key>
-				<integer>45</integer>
-			</dict>
-			<key>selectTo</key>
-			<dict>
-				<key>column</key>
-				<integer>8</integer>
-				<key>line</key>
-				<integer>45</integer>
-			</dict>
-		</dict>
-		<key>test/com/jeremyruppel/sass4as/Sass4ASTestSuite.as</key>
-		<dict>
-			<key>caret</key>
-			<dict>
-				<key>column</key>
-				<integer>22</integer>
-				<key>line</key>
-				<integer>39</integer>
-			</dict>
-			<key>firstVisibleColumn</key>
-			<integer>0</integer>
-			<key>firstVisibleLine</key>
-			<integer>30</integer>
-		</dict>
-		<key>test/com/jeremyruppel/sass4as/demo/SelectorInheritanceDemoFixture.as</key>
-		<dict>
-			<key>caret</key>
-			<dict>
-				<key>column</key>
-				<integer>44</integer>
-				<key>line</key>
-				<integer>18</integer>
-			</dict>
-			<key>firstVisibleColumn</key>
-			<integer>0</integer>
-			<key>firstVisibleLine</key>
-			<integer>0</integer>
-		</dict>
-		<key>test/com/jeremyruppel/sass4as/demo/VariablesDemoFixture.as</key>
-		<dict>
-			<key>caret</key>
-			<dict>
-				<key>column</key>
-				<integer>34</integer>
-				<key>line</key>
-				<integer>68</integer>
-			</dict>
-			<key>columnSelection</key>
-			<false/>
-			<key>firstVisibleColumn</key>
-			<integer>0</integer>
-			<key>firstVisibleLine</key>
-			<integer>30</integer>
-			<key>selectFrom</key>
-			<dict>
-				<key>column</key>
-				<integer>3</integer>
-				<key>line</key>
-				<integer>68</integer>
-			</dict>
-			<key>selectTo</key>
-			<dict>
-				<key>column</key>
-				<integer>34</integer>
-				<key>line</key>
-				<integer>68</integer>
-			</dict>
-		</dict>
-		<key>test/com/jeremyruppel/sass4as/operation/AttributeOperationFixture.as</key>
-		<dict>
-			<key>caret</key>
-			<dict>
-				<key>column</key>
-				<integer>0</integer>
-				<key>line</key>
-				<integer>0</integer>
-			</dict>
-			<key>firstVisibleColumn</key>
-			<integer>0</integer>
-			<key>firstVisibleLine</key>
-			<integer>0</integer>
-		</dict>
-		<key>test/com/jeremyruppel/sass4as/operation/AttributeOperationPatternFixture.as</key>
-		<dict>
-			<key>caret</key>
-			<dict>
-				<key>column</key>
-				<integer>0</integer>
-				<key>line</key>
-				<integer>0</integer>
-			</dict>
-			<key>firstVisibleColumn</key>
-			<integer>0</integer>
-			<key>firstVisibleLine</key>
-			<integer>0</integer>
-		</dict>
-		<key>test/com/jeremyruppel/sass4as/util/CssValueFixture.as</key>
-		<dict>
-			<key>caret</key>
-			<dict>
-				<key>column</key>
-				<integer>53</integer>
-				<key>line</key>
-				<integer>60</integer>
+				<integer>7</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
@@ -374,16 +164,10 @@
 	</dict>
 	<key>openDocuments</key>
 	<array>
-		<string>src/com/jeremyruppel/sass4as/parser/SassParser.as</string>
-		<string>deploy/index.html</string>
-		<string>src/com/jeremyruppel/sass4as/base/ContextBase.as</string>
-		<string>script/build-swc.sh</string>
-		<string>test/com/jeremyruppel/sass4as/Sass4ASTestSuite.as</string>
-		<string>test/com/jeremyruppel/sass4as/util/CssValueFixture.as</string>
+		<string>README.md</string>
+		<string>src/com/jeremyruppel/sass4as/util/strip.as</string>
+		<string>src/com/jeremyruppel/sass4as/util/camelcase.as</string>
 		<string>src/com/jeremyruppel/sass4as/util/cssvalue.as</string>
-		<string>script/manifest-gen.rb</string>
-		<string>src/com/jeremyruppel/sass4as/operation/CommentOperation.as</string>
-		<string>src/com/jeremyruppel/sass4as/operation/EmptyOperation.as</string>
 	</array>
 	<key>shellVariables</key>
 	<array>
@@ -440,13 +224,6 @@
 	<true/>
 	<key>treeState</key>
 	<dict>
-		<key>build</key>
-		<dict>
-			<key>isExpanded</key>
-			<true/>
-			<key>subItems</key>
-			<dict/>
-		</dict>
 		<key>deploy</key>
 		<dict>
 			<key>isExpanded</key>
@@ -454,34 +231,93 @@
 			<key>subItems</key>
 			<dict/>
 		</dict>
-		<key>libs</key>
-		<dict>
-			<key>isExpanded</key>
-			<true/>
-			<key>subItems</key>
-			<dict/>
-		</dict>
-		<key>script</key>
-		<dict>
-			<key>isExpanded</key>
-			<true/>
-			<key>subItems</key>
-			<dict>
-				<key>bin</key>
-				<dict>
-					<key>isExpanded</key>
-					<true/>
-					<key>subItems</key>
-					<dict/>
-				</dict>
-			</dict>
-		</dict>
 		<key>src</key>
 		<dict>
 			<key>isExpanded</key>
 			<true/>
 			<key>subItems</key>
-			<dict/>
+			<dict>
+				<key>com</key>
+				<dict>
+					<key>isExpanded</key>
+					<true/>
+					<key>subItems</key>
+					<dict>
+						<key>jeremyruppel</key>
+						<dict>
+							<key>isExpanded</key>
+							<true/>
+							<key>subItems</key>
+							<dict>
+								<key>sass4as</key>
+								<dict>
+									<key>isExpanded</key>
+									<true/>
+									<key>subItems</key>
+									<dict>
+										<key>attribute</key>
+										<dict>
+											<key>isExpanded</key>
+											<true/>
+											<key>subItems</key>
+											<dict/>
+										</dict>
+										<key>base</key>
+										<dict>
+											<key>isExpanded</key>
+											<true/>
+											<key>subItems</key>
+											<dict/>
+										</dict>
+										<key>context</key>
+										<dict>
+											<key>isExpanded</key>
+											<true/>
+											<key>subItems</key>
+											<dict/>
+										</dict>
+										<key>core</key>
+										<dict>
+											<key>isExpanded</key>
+											<true/>
+											<key>subItems</key>
+											<dict/>
+										</dict>
+										<key>error</key>
+										<dict>
+											<key>isExpanded</key>
+											<true/>
+											<key>subItems</key>
+											<dict/>
+										</dict>
+										<key>operation</key>
+										<dict>
+											<key>isExpanded</key>
+											<true/>
+											<key>subItems</key>
+											<dict/>
+										</dict>
+										<key>parser</key>
+										<dict>
+											<key>isExpanded</key>
+											<true/>
+											<key>subItems</key>
+											<dict/>
+										</dict>
+										<key>util</key>
+										<dict>
+											<key>isExpanded</key>
+											<true/>
+											<key>subItems</key>
+											<dict/>
+										</dict>
+									</dict>
+								</dict>
+							</dict>
+						</dict>
+					</dict>
+				</dict>
+			</dict>
 		</dict>
 		<key>test</key>
 		<dict>
@@ -507,7 +343,7 @@
 									<true/>
 									<key>subItems</key>
 									<dict>
-										<key>util</key>
+										<key>parser</key>
 										<dict>
 											<key>isExpanded</key>
 											<true/>
@@ -524,6 +360,6 @@
 		</dict>
 	</dict>
 	<key>windowFrame</key>
-	<string>{{824, 165}, {1070, 959}}</string>
+	<string>{{683, 115}, {1070, 959}}</string>
 </dict>
 </plist>

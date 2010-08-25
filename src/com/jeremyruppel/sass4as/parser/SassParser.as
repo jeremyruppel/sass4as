@@ -10,6 +10,7 @@
 package com.jeremyruppel.sass4as.parser
 {
 	import com.jeremyruppel.sass4as.context.NullContext;
+	import com.jeremyruppel.sass4as.context.StyleContext;
 	import com.jeremyruppel.sass4as.core.ISassContext;
 	import com.jeremyruppel.sass4as.core.ISassOperation;
 	import com.jeremyruppel.sass4as.core.ISassParser;
@@ -19,6 +20,7 @@ package com.jeremyruppel.sass4as.parser
 	import com.jeremyruppel.sass4as.operation.CatchAllOperation;
 	import com.jeremyruppel.sass4as.operation.EmptyOperation;
 	import com.jeremyruppel.sass4as.operation.ExtendOperation;
+	import com.jeremyruppel.sass4as.operation.GlobalOperation;
 	import com.jeremyruppel.sass4as.operation.StyleOperation;
 	import com.jeremyruppel.sass4as.operation.VariableOperation;
 	import flash.text.StyleSheet;
@@ -68,6 +70,11 @@ package com.jeremyruppel.sass4as.parser
 		/**
 		 * @private
 		 */
+		private var _globalContext : ISassContext;
+		
+		/**
+		 * @private
+		 */
 		private var _variables : Dictionary;
 		
 		/**
@@ -85,7 +92,7 @@ package com.jeremyruppel.sass4as.parser
 		//--------------------------------------
 		
 		/**
-		 * @return list of all of the available operations the parser can interpret
+		 * @inheritDoc
 		 */
 		public function get operations( ) : Vector.<ISassOperation>
 		{
@@ -93,7 +100,7 @@ package com.jeremyruppel.sass4as.parser
 		}
 		
 		/**
-		 * @return list of all of the styles defined in the stylesheet
+		 * @inheritDoc
 		 */
 		public function get styles( ) : Vector.<ISassStyle>
 		{
@@ -101,7 +108,7 @@ package com.jeremyruppel.sass4as.parser
 		}
 		
 		/**
-		 * @return the current context that the line parser assigns attributes to
+		 * @inheritDoc
 		 */
 		public function get context( ) : ISassContext
 		{
@@ -109,7 +116,15 @@ package com.jeremyruppel.sass4as.parser
 		}
 		
 		/**
-		 * @return dictionary all of the variables defined in the stylesheet
+		 * @inheritDoc
+		 */
+		public function get globalContext( ) : ISassContext
+		{
+			return _globalContext || ( _globalContext = new StyleContext( ) );
+		}
+		
+		/**
+		 * @inheritDoc
 		 */
 		public function get variables( ) : Dictionary
 		{
@@ -137,10 +152,7 @@ package com.jeremyruppel.sass4as.parser
 		//--------------------------------------
 	
 		/**
-		 * Parses sass text into a flash.text.StyleSheet
-		 * 
-		 * @param sass The sass text to parse into a StyleSheet
-		 * @return StyleSheet 
+		 * @inheritDoc 
 		 */
 		public function parseSass( sass : String ) : StyleSheet
 		{
@@ -175,9 +187,7 @@ package com.jeremyruppel.sass4as.parser
 		}
 		
 		/**
-		 * Raises an error on behalf of an operation with information about where the error occurred
-		 * 
-		 * @param error The error to be raised
+		 * @inheritDoc
 		 */
 		public function raise( error : String ) : void
 		{
@@ -190,6 +200,7 @@ package com.jeremyruppel.sass4as.parser
 		
 		/**
 		 * enables a default set of operations
+		 * 
 		 * @private
 		 * @return Vector 
 		 */
@@ -199,6 +210,7 @@ package com.jeremyruppel.sass4as.parser
 			
 			ops.push( new EmptyOperation( ) );
 			ops.push( new VariableOperation( ) );
+			ops.push( new GlobalOperation( ) );
 			ops.push( new StyleOperation( ) );
 			ops.push( new ExtendOperation( ) );
 			ops.push( new AttributeOperation( ) );
