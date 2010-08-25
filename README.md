@@ -2,24 +2,52 @@
 
 Syntactially Awesome Stylesheets for ActionScript 3, a scaled-back [Sass](http://sass-lang.org) parser for AS3.
 
-Using CSS to externally define styles in Flash applications is a **good practice**.  
-But in projects that have designs and clients that change and increase in complexity  
-frequently, they become very hard to maintain and update.
+Using CSS to externally define styles in Flash applications is a **good practice**. But in projects that have designs and clients that change and increase in complexity frequently, they become very hard to maintain and update.
 
 ## Enter Sass
 
-[Sass](http://sass-lang.org) rocks. Hard. It's a new way of writing CSS, letting you  
-use variables, selector inheritance, mixins, and helper methods to super-charge your  
-stylesheets, all while generally reducing filesize and increasing readability.
+[Sass](http://sass-lang.org) rocks. Hard. It's a new way of writing CSS, letting you use variables, selector inheritance, mixins, and helper methods to super-charge your stylesheets, all while generally reducing filesize and increasing readability.
 
-The Sass4as project is a parser for Sass documents that converts them to native
-Flash StyleSheet objects. Similar to how Flash's HTML parser does not support every  
-facet of CSS, like descendant selectors, Sass4as does not support every facet  
-of Sass, like descendant selectors.
+The Sass4as project is a parser for Sass documents that converts them to native Flash StyleSheet objects. Similar to how Flash's HTML parser does not support every facet of CSS, like descendant selectors, Sass4as does not support every facet of Sass, like descendant selectors.
 
 The goal is to support every single awesome thing Sass does that makes sense in Flash.
 
-## The Basics
+## How to use the SassParser
+
+Given the stylesheet below...
+
+	/* css/site.sass */
+	$bold: Helvetica Neue LT Std 85 Heavy
+	$blue: #001bf8
+	
+	base
+	  font-family: $bold
+	  color: $blue
+	
+	header
+	  @extend base
+	  font-size: 24pt
+	
+	body
+	  @extend base
+	  font-size: 14pt
+
+... loaded into a variable called sass:String.
+
+	import com.jeremyruppel.sass4as.parser.SassParser;
+	
+	var parser : SassParser = new SassParser( );
+	
+	var styleSheet : StyleSheet = parser.parseSass( sass );
+	
+	trace( styleSheet.styleNames ); // => base, header, body
+	trace( styleSheet.getStyle( 'body' ).fontFamily ) // => Helvetica Neue LT Std 85 Heavy
+
+And there you go. Apply that sucker to your TextFields and get to work.
+
+The default SassParser implementation also retains style definitions, so you could also combine multiple stylesheets into one StyleSheet instance.
+
+## The Basics of Sass4as
 
 **No curly braces**
   

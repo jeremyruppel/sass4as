@@ -14,6 +14,7 @@ package com.jeremyruppel.sass4as.parser
 	import flash.text.StyleSheet;
 	import org.hamcrest.assertThat;
 	import org.hamcrest.core.isA;
+	import org.hamcrest.object.equalTo;
 
 	/**
 	 * Class.
@@ -58,6 +59,36 @@ body
 </sass>;
 			
 			assertThat( parser.parseSass( sass.toString( ) ), isA( StyleSheet ) );
+		}
+		
+		[Test(description="sass parser retains styles and can combine multiple stylesheets")]
+		public function test_sass_parser_retains_styles_and_can_combine_multiple_stylesheets( ) : void
+		{
+			var first : XML =
+<sass>
+<![CDATA[
+body
+  font-family: Helvetica Neue
+  color: #ff0000
+  font-size: 14pt
+]]>
+</sass>;
+			
+			var styleSheet : StyleSheet = parser.parseSass( first.toString( ) );
+			
+			assertThat( styleSheet.getStyle( 'body' ).fontSize, equalTo( 14 ) );
+			
+			var second : XML =
+<sass>
+<![CDATA[
+body
+  font-size: 12pt
+]]>
+</sass>;
+
+			styleSheet = parser.parseSass( second.toString( ) );
+			
+			assertThat( styleSheet.getStyle( 'body' ).fontSize, equalTo( 12 ) );
 		}
 		
 		
