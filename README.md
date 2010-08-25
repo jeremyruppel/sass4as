@@ -2,7 +2,7 @@
 
 Syntactially Awesome Stylesheets for ActionScript 3, a scaled-back [Sass](http://sass-lang.com) parser for AS3.
 
-Using CSS to externally define styles in Flash applications is a **good practice**. But in projects that have designs and clients that change and increase in complexity frequently, they become very hard to maintain and update.
+Using CSS to externally define styles in Flash applications is a **good practice**. But in projects that have designs and clients that change and increase in complexity frequently, they become very hard to maintain and update and quickly turn into style soup.
 
 ## Enter Sass
 
@@ -45,7 +45,7 @@ Given the stylesheet below...
 
 And there you go. Apply that sucker to your TextFields and get to work.
 
-The default SassParser implementation also retains style definitions, so you could also combine multiple stylesheets into one StyleSheet instance.
+The default SassParser implementation also retains style definitions, so you can combine multiple stylesheets into one StyleSheet instance. *Think of the benefits for localization!*
 
 ## The Basics of Sass4as
 
@@ -59,7 +59,7 @@ For the same reason, attribute declarations do not need to end with semicolons
 
 **No tabs**
 
-To set a unified paradigm for indentation, selectors are declared at the start of a line and attributes are declared by inserting exactly two spaces.
+To set a standard for indentation, selectors are declared at the start of a line and attributes are declared by inserting exactly two spaces.
 
 **No .class or #id selectors**
 
@@ -80,6 +80,8 @@ Good:
 	<highlight>Text</highlight>
 	
 The use of implicit style classes greatly enhances readability in your markup.
+
+The [Sass4as TextMate Bundle](http://github.com/jeremyruppel/sass4as-tmbundle) has syntax highlighting and a few useful commands to help out while editing .sass documents.
 
 ## Variables
 
