@@ -11,7 +11,10 @@ package com.jeremyruppel.sass4as.core
 {
 
 	/**
-	 * Interface describing the contract for...
+	 * An <code>ISassOperation</code> is triggered by a line matching
+	 * the operation's pattern. The operation then performs certain
+	 * actions on the <code>ISassParser</code> based on the contents
+	 * of that line.
 	 * 
 	 * @langversion ActionScript 3.0
 	 * @playerversion Flash 10.0.0

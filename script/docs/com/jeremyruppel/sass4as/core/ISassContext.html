@@ -45,7 +45,10 @@ if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("In
 </tr>
 </table>
 <p></p>
-  Interface describing the contract for...
+  An <code>ISassContext</code> represents the current context
+  of the <code>ISassParser</code> as it evaluates the document.
+  A context contains a list of attributes and may extend other
+  contexts.
   
   <p></p>
 <br>
@@ -87,7 +90,7 @@ if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("In
 <div class="summarySignature">
 <a class="signatureLink" href="#extendContext()">extendContext</a>(context:<a href="ISassContext.html">ISassContext</a>):void</div>
 <div class="summaryTableDescription">
-   Adds all <code>ISassAttributes</code> from the specified context to this context
+   Adds all <code>ISassAttributes</code> from the specified <code>ISassContext</code> to this context
    </div>
 </td><td class="summaryTableOwnerCol">ISassContext</td>
 </tr>
@@ -140,7 +143,7 @@ showHideInherited();
 </table>
 <div class="detailBody">
 <code>public function extendContext(context:<a href="ISassContext.html">ISassContext</a>):void</code><p>
-   Adds all <code>ISassAttributes</code> from the specified context to this context
+   Adds all <code>ISassAttributes</code> from the specified <code>ISassContext</code> to this context
    </p><span class="label">Parameters</span>
 <table border="0" cellspacing="0" cellpadding="0">
 <tr>

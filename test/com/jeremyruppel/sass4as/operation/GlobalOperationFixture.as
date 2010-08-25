@@ -23,7 +23,7 @@ package com.jeremyruppel.sass4as.operation
 	 * Class.
 	 * 
 	 * @langversion ActionScript 3.0
-	 * @playerversion Flash 9.0
+	 * @playerversion Flash 10.0.0
 	 * 
 	 * @author Jeremy Ruppel
 	 * @since  24.08.2010

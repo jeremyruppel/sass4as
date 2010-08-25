@@ -70,11 +70,15 @@ if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("In
 </td><td class="summaryTableOwnerCol"><a href="ISassContext.html">ISassContext</a></td>
 </tr>
 <tr class="">
-<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#styleName">styleName</a> : String<div class="summaryTableDescription">[read-only]</div>
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#styleName">styleName</a> : String<div class="summaryTableDescription">[read-only]
+   The name of this style
+   </div>
 </td><td class="summaryTableOwnerCol">ISassStyle</td>
 </tr>
 <tr class="">
-<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#styleObject">styleObject</a> : Object<div class="summaryTableDescription">[read-only]</div>
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#styleObject">styleObject</a> : Object<div class="summaryTableDescription">[read-only]
+   The style object defining this style's attributes, ready to be passed to <code>StyleSheet.setStyle</code>
+   </div>
 </td><td class="summaryTableOwnerCol">ISassStyle</td>
 </tr>
 </table>
@@ -108,7 +112,7 @@ if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("In
 <div class="summarySignature">
 <a class="signatureLink" href="ISassContext.html#extendContext()">extendContext</a>(context:<a href="../core/ISassContext.html">ISassContext</a>):void</div>
 <div class="summaryTableDescription">
-   Adds all <code>ISassAttributes</code> from the specified context to this context
+   Adds all <code>ISassAttributes</code> from the specified <code>ISassContext</code> to this context
    </div>
 </td><td class="summaryTableOwnerCol"><a href="ISassContext.html">ISassContext</a></td>
 </tr>
@@ -128,7 +132,9 @@ showHideInherited();
 </tr>
 </table>
 <div class="detailBody">
-<code>styleName:String</code>&nbsp;&nbsp;[read-only]<span class="label">Implementation</span>
+<code>styleName:String</code>&nbsp;&nbsp;[read-only]<p>
+   The name of this style
+   </p><span class="label">Implementation</span>
 <br>
 <code>&nbsp;&nbsp;&nbsp;&nbsp;public function get styleName():String</code>
 <br>
@@ -140,7 +146,9 @@ showHideInherited();
 </tr>
 </table>
 <div class="detailBody">
-<code>styleObject:Object</code>&nbsp;&nbsp;[read-only]<span class="label">Implementation</span>
+<code>styleObject:Object</code>&nbsp;&nbsp;[read-only]<p>
+   The style object defining this style's attributes, ready to be passed to <code>StyleSheet.setStyle</code>
+   </p><span class="label">Implementation</span>
 <br>
 <code>&nbsp;&nbsp;&nbsp;&nbsp;public function get styleObject():Object</code>
 <br>

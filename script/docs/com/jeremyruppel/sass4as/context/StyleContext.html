@@ -69,6 +69,7 @@ if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Cl
 <tr class="hideInheritedProperty">
 <td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="../base/ContextBase.html#attributes">attributes</a> : Vector<div class="summaryTableDescription">
    
+   A list of all <code>ISassAttribute</code> instances that have been added to this context
    </div>
 </td><td class="summaryTableOwnerCol"><a href="../base/ContextBase.html">ContextBase</a></td>
 </tr>
@@ -94,6 +95,9 @@ if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Cl
 <div class="summarySignature">
 <a class="signatureLink" href="#addAttribute()">addAttribute</a>(attribute:<a href="../core/ISassAttribute.html">ISassAttribute</a>):void</div>
 <div class="summaryTableDescription">
+   
+   
+   Adds an <code>ISassAttribute</code> to this context
    </div>
 </td><td class="summaryTableOwnerCol">StyleContext</td>
 </tr>
@@ -102,6 +106,9 @@ if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Cl
 <div class="summarySignature">
 <a class="signatureLink" href="#extendContext()">extendContext</a>(context:<a href="../core/ISassContext.html">ISassContext</a>):void</div>
 <div class="summaryTableDescription">
+   
+   
+   Adds all <code>ISassAttributes</code> from the specified <code>ISassContext</code> to this context
    </div>
 </td><td class="summaryTableOwnerCol">StyleContext</td>
 </tr>
@@ -133,6 +140,9 @@ showHideInherited();
 </table>
 <div class="detailBody">
 <code>public override function addAttribute(attribute:<a href="../core/ISassAttribute.html">ISassAttribute</a>):void</code><p>
+   
+   
+   Adds an <code>ISassAttribute</code> to this context
    </p><span class="label">Parameters</span>
 <table border="0" cellspacing="0" cellpadding="0">
 <tr>
@@ -148,6 +158,9 @@ showHideInherited();
 </table>
 <div class="detailBody">
 <code>public override function extendContext(context:<a href="../core/ISassContext.html">ISassContext</a>):void</code><p>
+   
+   
+   Adds all <code>ISassAttributes</code> from the specified <code>ISassContext</code> to this context
    </p><span class="label">Parameters</span>
 <table border="0" cellspacing="0" cellpadding="0">
 <tr>

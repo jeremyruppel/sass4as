@@ -61,6 +61,7 @@ if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Cl
 <tr class="">
 <td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#attributes">attributes</a> : Vector<div class="summaryTableDescription">[read-only]
    
+   A list of all <code>ISassAttribute</code> instances that have been added to this context
    </div>
 </td><td class="summaryTableOwnerCol">ContextBase</td>
 </tr>
@@ -85,14 +86,20 @@ if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Cl
 <td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
 <div class="summarySignature">
 <a class="signatureLink" href="#addAttribute()">addAttribute</a>(attribute:<a href="../core/ISassAttribute.html">ISassAttribute</a>):void</div>
-<div class="summaryTableDescription"></div>
+<div class="summaryTableDescription">
+   
+   Adds an <code>ISassAttribute</code> to this context
+   </div>
 </td><td class="summaryTableOwnerCol">ContextBase</td>
 </tr>
 <tr class="">
 <td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
 <div class="summarySignature">
 <a class="signatureLink" href="#extendContext()">extendContext</a>(context:<a href="../core/ISassContext.html">ISassContext</a>):void</div>
-<div class="summaryTableDescription"></div>
+<div class="summaryTableDescription">
+   
+   Adds all <code>ISassAttributes</code> from the specified <code>ISassContext</code> to this context
+   </div>
 </td><td class="summaryTableOwnerCol">ContextBase</td>
 </tr>
 </table>
@@ -113,6 +120,7 @@ showHideInherited();
 <div class="detailBody">
 <code>attributes:Vector</code>&nbsp;&nbsp;[read-only]<p>
    
+   A list of all <code>ISassAttribute</code> instances that have been added to this context
    </p><span class="label">Implementation</span>
 <br>
 <code>&nbsp;&nbsp;&nbsp;&nbsp;public function get attributes():Vector</code>
@@ -138,7 +146,10 @@ showHideInherited();
 </tr>
 </table>
 <div class="detailBody">
-<code>public function addAttribute(attribute:<a href="../core/ISassAttribute.html">ISassAttribute</a>):void</code><span class="label">Parameters</span>
+<code>public function addAttribute(attribute:<a href="../core/ISassAttribute.html">ISassAttribute</a>):void</code><p>
+   
+   Adds an <code>ISassAttribute</code> to this context
+   </p><span class="label">Parameters</span>
 <table border="0" cellspacing="0" cellpadding="0">
 <tr>
 <td width="20px"></td><td><code><span class="label">attribute</span>:<a href="../core/ISassAttribute.html">ISassAttribute</a></code></td>
@@ -152,7 +163,10 @@ showHideInherited();
 </tr>
 </table>
 <div class="detailBody">
-<code>public function extendContext(context:<a href="../core/ISassContext.html">ISassContext</a>):void</code><span class="label">Parameters</span>
+<code>public function extendContext(context:<a href="../core/ISassContext.html">ISassContext</a>):void</code><p>
+   
+   Adds all <code>ISassAttributes</code> from the specified <code>ISassContext</code> to this context
+   </p><span class="label">Parameters</span>
 <table border="0" cellspacing="0" cellpadding="0">
 <tr>
 <td width="20px"></td><td><code><span class="label">context</span>:<a href="../core/ISassContext.html">ISassContext</a></code></td>

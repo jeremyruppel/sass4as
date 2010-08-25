@@ -11,7 +11,10 @@ package com.jeremyruppel.sass4as.core
 {
 
 	/**
-	 * Interface describing the contract for...
+	 * An <code>ISassContext</code> represents the current context
+	 * of the <code>ISassParser</code> as it evaluates the document.
+	 * A context contains a list of attributes and may extend other
+	 * contexts.
 	 * 
 	 * @langversion ActionScript 3.0
 	 * @playerversion Flash 10.0.0

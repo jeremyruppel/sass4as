@@ -11,7 +11,9 @@ package com.jeremyruppel.sass4as.error
 {
 
 	/**
-	 * Error subclass.
+	 * Error subclass containing error message constants for the <code>SassParser</code>.
+	 * Typically, errors will be raised by the parser on behalf of an <code>ISassOperation</code>
+	 * through <code>ISassParser.raise()</code>.
 	 * 
 	 * @langversion ActionScript 3.0
 	 * @playerversion Flash 10.0.0
@@ -27,17 +29,12 @@ package com.jeremyruppel.sass4as.error
 		//--------------------------------------
 	
 		/**
-		 * @private
+		 * Thrown when a duplicate variable definition is encountered by the parser.
 		 */
 		public static const E_VARIABLE_OVR : String = "Duplicate variable definition encountered. Cannot overwrite variable.";
 		
 		/**
-		 * @private
-		 */
-		public static const E_STYLE_OVR : String = "Duplicate style definition encountered. Cannot overwrite style";
-		
-		/**
-		 * @private
+		 * Thrown when a line is found that matches no operations
 		 */
 		public static const E_OPERATION_NOMATCH : String = "No operation found matching line.";
 		

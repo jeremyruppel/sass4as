@@ -69,15 +69,22 @@ if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Cl
 <tr class="hideInheritedProperty">
 <td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="../base/ContextBase.html#attributes">attributes</a> : Vector<div class="summaryTableDescription">
    
+   A list of all <code>ISassAttribute</code> instances that have been added to this context
    </div>
 </td><td class="summaryTableOwnerCol"><a href="../base/ContextBase.html">ContextBase</a></td>
 </tr>
 <tr class="">
-<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#styleName">styleName</a> : String<div class="summaryTableDescription">[read-only]</div>
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#styleName">styleName</a> : String<div class="summaryTableDescription">[read-only]
+   
+   The name of this style
+   </div>
 </td><td class="summaryTableOwnerCol">SassStyle</td>
 </tr>
 <tr class="">
-<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#styleObject">styleObject</a> : Object<div class="summaryTableDescription">[read-only]</div>
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#styleObject">styleObject</a> : Object<div class="summaryTableDescription">[read-only]
+   
+   The style object defining this style's attributes, ready to be passed to <code>StyleSheet.setStyle</code>
+   </div>
 </td><td class="summaryTableOwnerCol">SassStyle</td>
 </tr>
 </table>
@@ -110,6 +117,9 @@ if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Cl
 <div class="summarySignature">
 <a class="signatureLink" href="../context/StyleContext.html#addAttribute()">addAttribute</a>(attribute:<a href="../core/ISassAttribute.html">ISassAttribute</a>):void</div>
 <div class="summaryTableDescription">
+   
+   
+   Adds an <code>ISassAttribute</code> to this context
    </div>
 </td><td class="summaryTableOwnerCol"><a href="../context/StyleContext.html">StyleContext</a></td>
 </tr>
@@ -118,6 +128,9 @@ if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Cl
 <div class="summarySignature">
 <a class="signatureLink" href="../context/StyleContext.html#extendContext()">extendContext</a>(context:<a href="../core/ISassContext.html">ISassContext</a>):void</div>
 <div class="summaryTableDescription">
+   
+   
+   Adds all <code>ISassAttributes</code> from the specified <code>ISassContext</code> to this context
    </div>
 </td><td class="summaryTableOwnerCol"><a href="../context/StyleContext.html">StyleContext</a></td>
 </tr>
@@ -125,7 +138,9 @@ if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Cl
 <td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
 <div class="summarySignature">
 <a class="signatureLink" href="#toString()">toString</a>():String</div>
-<div class="summaryTableDescription"></div>
+<div class="summaryTableDescription">
+   A string representation of this object
+   </div>
 </td><td class="summaryTableOwnerCol">SassStyle</td>
 </tr>
 </table>
@@ -144,7 +159,10 @@ showHideInherited();
 </tr>
 </table>
 <div class="detailBody">
-<code>styleName:String</code>&nbsp;&nbsp;[read-only]<span class="label">Implementation</span>
+<code>styleName:String</code>&nbsp;&nbsp;[read-only]<p>
+   
+   The name of this style
+   </p><span class="label">Implementation</span>
 <br>
 <code>&nbsp;&nbsp;&nbsp;&nbsp;public function get styleName():String</code>
 <br>
@@ -156,7 +174,10 @@ showHideInherited();
 </tr>
 </table>
 <div class="detailBody">
-<code>styleObject:Object</code>&nbsp;&nbsp;[read-only]<span class="label">Implementation</span>
+<code>styleObject:Object</code>&nbsp;&nbsp;[read-only]<p>
+   
+   The style object defining this style's attributes, ready to be passed to <code>StyleSheet.setStyle</code>
+   </p><span class="label">Implementation</span>
 <br>
 <code>&nbsp;&nbsp;&nbsp;&nbsp;public function get styleObject():Object</code>
 <br>
@@ -187,8 +208,9 @@ showHideInherited();
 </tr>
 </table>
 <div class="detailBody">
-<code>public function toString():String</code>
-<p></p>
+<code>public function toString():String</code><p>
+   A string representation of this object
+   </p><p></p>
 <span class="label">Returns</span>
 <table border="0" cellspacing="0" cellpadding="0">
 <tr>
