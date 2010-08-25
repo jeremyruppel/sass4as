@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>currentDocument</key>
-	<string>src/com/jeremyruppel/sass4as/util/camelcase.as</string>
+	<string>README.md</string>
 	<key>documents</key>
 	<array>
 		<dict>
@@ -33,6 +33,22 @@
 			<string>libs</string>
 		</dict>
 		<dict>
+			<key>filename</key>
+			<string>LICENSE</string>
+			<key>lastUsed</key>
+			<date>2010-08-24T17:05:33Z</date>
+		</dict>
+		<dict>
+			<key>filename</key>
+			<string>README.md</string>
+			<key>lastUsed</key>
+			<date>2010-08-25T02:30:39Z</date>
+			<key>selected</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>expanded</key>
+			<true/>
 			<key>name</key>
 			<string>script</string>
 			<key>regexFolderFilter</key>
@@ -51,26 +67,12 @@
 			<string>src</string>
 		</dict>
 		<dict>
-			<key>expanded</key>
-			<true/>
 			<key>name</key>
 			<string>test</string>
 			<key>regexFolderFilter</key>
 			<string>!.*/(\.[^/]*|CVS|_darcs|_MTN|\{arch\}|blib|.*~\.nib|.*\.(framework|app|pbproj|pbxproj|xcode(proj)?|bundle))$</string>
 			<key>sourceDirectory</key>
 			<string>test</string>
-		</dict>
-		<dict>
-			<key>filename</key>
-			<string>LICENSE</string>
-			<key>lastUsed</key>
-			<date>2010-08-24T17:05:33Z</date>
-		</dict>
-		<dict>
-			<key>filename</key>
-			<string>README.md</string>
-			<key>lastUsed</key>
-			<date>2010-08-25T00:44:19Z</date>
 		</dict>
 	</array>
 	<key>fileHierarchyDrawerWidth</key>
@@ -82,14 +84,14 @@
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>247</integer>
+				<integer>71</integer>
 				<key>line</key>
-				<integer>4</integer>
+				<integer>45</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>67</integer>
+			<integer>0</integer>
 		</dict>
 		<key>deploy/index.html</key>
 		<dict>
@@ -119,19 +121,89 @@
 			<key>firstVisibleLine</key>
 			<integer>0</integer>
 		</dict>
-		<key>src/com/jeremyruppel/sass4as/util/camelcase.as</key>
+		<key>src/com/jeremyruppel/sass4as/core/ISassParser.as</key>
 		<dict>
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>80</integer>
+				<integer>4</integer>
 				<key>line</key>
-				<integer>7</integer>
+				<integer>22</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>7</integer>
+		</dict>
+		<key>src/com/jeremyruppel/sass4as/error/SassError.as</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>110</integer>
+				<key>line</key>
+				<integer>30</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
 			<integer>0</integer>
+		</dict>
+		<key>src/com/jeremyruppel/sass4as/operation/CommentOperation.as</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>0</integer>
+				<key>line</key>
+				<integer>0</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>0</integer>
+		</dict>
+		<key>src/com/jeremyruppel/sass4as/operation/GlobalOperation.as</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>0</integer>
+				<key>line</key>
+				<integer>22</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>0</integer>
+		</dict>
+		<key>src/com/jeremyruppel/sass4as/operation/StyleOperation.as</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>0</integer>
+				<key>line</key>
+				<integer>40</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>0</integer>
+		</dict>
+		<key>src/com/jeremyruppel/sass4as/parser/SassParser.as</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>0</integer>
+				<key>line</key>
+				<integer>37</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>19</integer>
 		</dict>
 		<key>src/com/jeremyruppel/sass4as/util/cssvalue.as</key>
 		<dict>
@@ -161,12 +233,139 @@
 			<key>firstVisibleLine</key>
 			<integer>0</integer>
 		</dict>
+		<key>test/com/jeremyruppel/sass4as/Sass4ASTestSuite.as</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>4</integer>
+				<key>line</key>
+				<integer>43</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>0</integer>
+		</dict>
+		<key>test/com/jeremyruppel/sass4as/operation/ExtendOperationFixture.as</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>0</integer>
+				<key>line</key>
+				<integer>53</integer>
+			</dict>
+			<key>columnSelection</key>
+			<false/>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>8</integer>
+			<key>selectFrom</key>
+			<dict>
+				<key>column</key>
+				<integer>107</integer>
+				<key>line</key>
+				<integer>66</integer>
+			</dict>
+			<key>selectTo</key>
+			<dict>
+				<key>column</key>
+				<integer>0</integer>
+				<key>line</key>
+				<integer>53</integer>
+			</dict>
+		</dict>
+		<key>test/com/jeremyruppel/sass4as/operation/GlobalOperationFixture.as</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>0</integer>
+				<key>line</key>
+				<integer>29</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>0</integer>
+		</dict>
+		<key>test/com/jeremyruppel/sass4as/operation/GlobalOperationPatternFixture.as</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>0</integer>
+				<key>line</key>
+				<integer>46</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>0</integer>
+		</dict>
+		<key>test/com/jeremyruppel/sass4as/operation/StyleOperationFixture.as</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>0</integer>
+				<key>line</key>
+				<integer>47</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>0</integer>
+		</dict>
+		<key>test/com/jeremyruppel/sass4as/operation/VariableOperationPatternFixture.as</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>3</integer>
+				<key>line</key>
+				<integer>43</integer>
+			</dict>
+			<key>columnSelection</key>
+			<false/>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>0</integer>
+			<key>selectFrom</key>
+			<dict>
+				<key>column</key>
+				<integer>2</integer>
+				<key>line</key>
+				<integer>29</integer>
+			</dict>
+			<key>selectTo</key>
+			<dict>
+				<key>column</key>
+				<integer>3</integer>
+				<key>line</key>
+				<integer>43</integer>
+			</dict>
+		</dict>
 	</dict>
 	<key>openDocuments</key>
 	<array>
 		<string>README.md</string>
-		<string>src/com/jeremyruppel/sass4as/util/strip.as</string>
-		<string>src/com/jeremyruppel/sass4as/util/camelcase.as</string>
+		<string>test/com/jeremyruppel/sass4as/operation/GlobalOperationPatternFixture.as</string>
+		<string>test/com/jeremyruppel/sass4as/operation/StyleOperationFixture.as</string>
+		<string>test/com/jeremyruppel/sass4as/Sass4ASTestSuite.as</string>
+		<string>test/com/jeremyruppel/sass4as/operation/GlobalOperationFixture.as</string>
+		<string>test/com/jeremyruppel/sass4as/operation/ExtendOperationFixture.as</string>
+		<string>test/com/jeremyruppel/sass4as/operation/VariableOperationPatternFixture.as</string>
+		<string>src/com/jeremyruppel/sass4as/parser/SassParser.as</string>
+		<string>src/com/jeremyruppel/sass4as/operation/StyleOperation.as</string>
+		<string>src/com/jeremyruppel/sass4as/operation/GlobalOperation.as</string>
+		<string>src/com/jeremyruppel/sass4as/error/SassError.as</string>
+		<string>src/com/jeremyruppel/sass4as/core/ISassParser.as</string>
+		<string>script/manifest-gen.rb</string>
+		<string>src/com/jeremyruppel/sass4as/operation/CommentOperation.as</string>
 		<string>src/com/jeremyruppel/sass4as/util/cssvalue.as</string>
 	</array>
 	<key>shellVariables</key>
@@ -230,6 +429,21 @@
 			<true/>
 			<key>subItems</key>
 			<dict/>
+		</dict>
+		<key>script</key>
+		<dict>
+			<key>isExpanded</key>
+			<true/>
+			<key>subItems</key>
+			<dict>
+				<key>docs</key>
+				<dict>
+					<key>isExpanded</key>
+					<true/>
+					<key>subItems</key>
+					<dict/>
+				</dict>
+			</dict>
 		</dict>
 		<key>src</key>
 		<dict>
@@ -319,47 +533,8 @@
 				</dict>
 			</dict>
 		</dict>
-		<key>test</key>
-		<dict>
-			<key>isExpanded</key>
-			<true/>
-			<key>subItems</key>
-			<dict>
-				<key>com</key>
-				<dict>
-					<key>isExpanded</key>
-					<true/>
-					<key>subItems</key>
-					<dict>
-						<key>jeremyruppel</key>
-						<dict>
-							<key>isExpanded</key>
-							<true/>
-							<key>subItems</key>
-							<dict>
-								<key>sass4as</key>
-								<dict>
-									<key>isExpanded</key>
-									<true/>
-									<key>subItems</key>
-									<dict>
-										<key>parser</key>
-										<dict>
-											<key>isExpanded</key>
-											<true/>
-											<key>subItems</key>
-											<dict/>
-										</dict>
-									</dict>
-								</dict>
-							</dict>
-						</dict>
-					</dict>
-				</dict>
-			</dict>
-		</dict>
 	</dict>
 	<key>windowFrame</key>
-	<string>{{683, 115}, {1070, 959}}</string>
+	<string>{{649, 170}, {1070, 959}}</string>
 </dict>
 </plist>

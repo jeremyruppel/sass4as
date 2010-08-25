@@ -121,6 +121,18 @@ In sass documents, you can easily extend classes with the `@extend` directive. A
 
 **Note: A class must be declared ahead of any reference to it in the document**
 
+You can also declare the star "*" selector and all subsequent classes will inherit from it automatically.
+
+	*
+	  display: inline
+	  font-family: Helvetica Neue
+	
+	header
+	  font-size: 24pt
+	
+	body
+	  font-size: 12pt
+
 ## Mixins
 
 **Mixins are not yet supported by the Sass4as parser, but they're in the works**
