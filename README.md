@@ -1,12 +1,12 @@
 # Sass4as
 
-Syntactially Awesome Stylesheets for ActionScript 3, a scaled-back [Sass](http://sass-lang.org) parser for AS3.
+Syntactially Awesome Stylesheets for ActionScript 3, a scaled-back [Sass](http://sass-lang.com) parser for AS3.
 
 Using CSS to externally define styles in Flash applications is a **good practice**. But in projects that have designs and clients that change and increase in complexity frequently, they become very hard to maintain and update.
 
 ## Enter Sass
 
-[Sass](http://sass-lang.org) rocks. Hard. It's a new way of writing CSS, letting you use variables, selector inheritance, mixins, and helper methods to super-charge your stylesheets, all while generally reducing filesize and increasing readability.
+[Sass](http://sass-lang.com) rocks. Hard. It's a new way of writing CSS, letting you use variables, selector inheritance, mixins, and helper methods to super-charge your stylesheets, all while generally reducing filesize and increasing readability.
 
 The Sass4as project is a parser for Sass documents that converts them to native Flash StyleSheet objects. Similar to how Flash's HTML parser does not support every facet of CSS, like descendant selectors, Sass4as does not support every facet of Sass, like descendant selectors.
 
